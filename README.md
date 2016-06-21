@@ -1,2 +1,2 @@
 # TransitionExample
-Example code of UIViewControllerTransitioningDelegate implementation
+Example code for UIViewControllerTransitioningDelegate implementation

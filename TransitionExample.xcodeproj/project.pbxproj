@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		194A05D91D18E9A600C6601E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A05D81D18E9A600C6601E /* AppDelegate.swift */; };
+		194A05DB1D18E9A600C6601E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A05DA1D18E9A600C6601E /* ViewController.swift */; };
+		194A05E01D18E9A600C6601E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 194A05DF1D18E9A600C6601E /* Assets.xcassets */; };
+		194A05E31D18E9A600C6601E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194A05E11D18E9A600C6601E /* LaunchScreen.storyboard */; };
+		194A05F51D18E9E100C6601E /* AnimationClosureProviderTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A05EC1D18E9E100C6601E /* AnimationClosureProviderTransitionManager.swift */; };
+		194A05F61D18E9E100C6601E /* FadeSlideTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A05ED1D18E9E100C6601E /* FadeSlideTransitionManager.swift */; };
+		194A05F71D18E9E100C6601E /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A05EE1D18E9E100C6601E /* TransitionManager.swift */; };
+		194A05F81D18E9E100C6601E /* ZoomFallTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A05EF1D18E9E100C6601E /* ZoomFallTransitionManager.swift */; };
+		194A05F91D18E9E100C6601E /* ZoomInOutTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A05F01D18E9E100C6601E /* ZoomInOutTransitionManager.swift */; };
+		194A05FA1D18E9E100C6601E /* BlurredBackgroundPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A05F21D18E9E100C6601E /* BlurredBackgroundPresentationController.swift */; };
+		194A05FB1D18E9E100C6601E /* TapDismissablePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A05F31D18E9E100C6601E /* TapDismissablePresentationController.swift */; };
+		194A05FC1D18E9E100C6601E /* UIView+BlurredSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A05F41D18E9E100C6601E /* UIView+BlurredSnapshot.swift */; };
+		194A06051D18EB5900C6601E /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 194A06041D18EB5900C6601E /* UIImageEffects.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		194A05D51D18E9A600C6601E /* TransitionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		194A05D81D18E9A600C6601E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		194A05DA1D18E9A600C6601E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		194A05DF1D18E9A600C6601E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		194A05E21D18E9A600C6601E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		194A05E41D18E9A600C6601E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		194A05EC1D18E9E100C6601E /* AnimationClosureProviderTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationClosureProviderTransitionManager.swift; sourceTree = "<group>"; };
+		194A05ED1D18E9E100C6601E /* FadeSlideTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeSlideTransitionManager.swift; sourceTree = "<group>"; };
+		194A05EE1D18E9E100C6601E /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		194A05EF1D18E9E100C6601E /* ZoomFallTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomFallTransitionManager.swift; sourceTree = "<group>"; };
+		194A05F01D18E9E100C6601E /* ZoomInOutTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomInOutTransitionManager.swift; sourceTree = "<group>"; };
+		194A05F21D18E9E100C6601E /* BlurredBackgroundPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredBackgroundPresentationController.swift; sourceTree = "<group>"; };
+		194A05F31D18E9E100C6601E /* TapDismissablePresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapDismissablePresentationController.swift; sourceTree = "<group>"; };
+		194A05F41D18E9E100C6601E /* UIView+BlurredSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+BlurredSnapshot.swift"; sourceTree = "<group>"; };
+		194A06031D18EB5900C6601E /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
+		194A06041D18EB5900C6601E /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
+		194A06091D18EBA400C6601E /* TransitionExample-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TransitionExample-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		194A05D21D18E9A600C6601E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		194A05CC1D18E9A600C6601E = {
+			isa = PBXGroup;
+			children = (
+				194A05D71D18E9A600C6601E /* TransitionExample */,
+				194A05D61D18E9A600C6601E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		194A05D61D18E9A600C6601E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				194A05D51D18E9A600C6601E /* TransitionExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		194A05D71D18E9A600C6601E /* TransitionExample */ = {
+			isa = PBXGroup;
+			children = (
+				194A05EA1D18E9E100C6601E /* Transition */,
+				194A05D81D18E9A600C6601E /* AppDelegate.swift */,
+				194A05DA1D18E9A600C6601E /* ViewController.swift */,
+				194A06091D18EBA400C6601E /* TransitionExample-Bridging-Header.h */,
+				194A05DF1D18E9A600C6601E /* Assets.xcassets */,
+				194A05E11D18E9A600C6601E /* LaunchScreen.storyboard */,
+				194A05E41D18E9A600C6601E /* Info.plist */,
+			);
+			path = TransitionExample;
+			sourceTree = "<group>";
+		};
+		194A05EA1D18E9E100C6601E /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				194A06021D18EB5900C6601E /* ImageEffects */,
+				194A05EB1D18E9E100C6601E /* Animator */,
+				194A05F11D18E9E100C6601E /* Presentation Controller */,
+				194A05F41D18E9E100C6601E /* UIView+BlurredSnapshot.swift */,
+			);
+			path = Transition;
+			sourceTree = SOURCE_ROOT;
+		};
+		194A05EB1D18E9E100C6601E /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				194A05EC1D18E9E100C6601E /* AnimationClosureProviderTransitionManager.swift */,
+				194A05ED1D18E9E100C6601E /* FadeSlideTransitionManager.swift */,
+				194A05EE1D18E9E100C6601E /* TransitionManager.swift */,
+				194A05EF1D18E9E100C6601E /* ZoomFallTransitionManager.swift */,
+				194A05F01D18E9E100C6601E /* ZoomInOutTransitionManager.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		194A05F11D18E9E100C6601E /* Presentation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				194A05F21D18E9E100C6601E /* BlurredBackgroundPresentationController.swift */,
+				194A05F31D18E9E100C6601E /* TapDismissablePresentationController.swift */,
+			);
+			path = "Presentation Controller";
+			sourceTree = "<group>";
+		};
+		194A06021D18EB5900C6601E /* ImageEffects */ = {
+			isa = PBXGroup;
+			children = (
+				194A06031D18EB5900C6601E /* UIImageEffects.h */,
+				194A06041D18EB5900C6601E /* UIImageEffects.m */,
+			);
+			path = ImageEffects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		194A05D41D18E9A600C6601E /* TransitionExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 194A05E71D18E9A600C6601E /* Build configuration list for PBXNativeTarget "TransitionExample" */;
+			buildPhases = (
+				194A05D11D18E9A600C6601E /* Sources */,
+				194A05D21D18E9A600C6601E /* Frameworks */,
+				194A05D31D18E9A600C6601E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransitionExample;
+			productName = TransitionExample;
+			productReference = 194A05D51D18E9A600C6601E /* TransitionExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		194A05CD1D18E9A600C6601E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Herli;
+				TargetAttributes = {
+					194A05D41D18E9A600C6601E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 194A05D01D18E9A600C6601E /* Build configuration list for PBXProject "TransitionExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 194A05CC1D18E9A600C6601E;
+			productRefGroup = 194A05D61D18E9A600C6601E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				194A05D41D18E9A600C6601E /* TransitionExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		194A05D31D18E9A600C6601E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				194A05E31D18E9A600C6601E /* LaunchScreen.storyboard in Resources */,
+				194A05E01D18E9A600C6601E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		194A05D11D18E9A600C6601E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				194A05FA1D18E9E100C6601E /* BlurredBackgroundPresentationController.swift in Sources */,
+				194A05F61D18E9E100C6601E /* FadeSlideTransitionManager.swift in Sources */,
+				194A05F71D18E9E100C6601E /* TransitionManager.swift in Sources */,
+				194A05F81D18E9E100C6601E /* ZoomFallTransitionManager.swift in Sources */,
+				194A05FB1D18E9E100C6601E /* TapDismissablePresentationController.swift in Sources */,
+				194A05FC1D18E9E100C6601E /* UIView+BlurredSnapshot.swift in Sources */,
+				194A05F91D18E9E100C6601E /* ZoomInOutTransitionManager.swift in Sources */,
+				194A05F51D18E9E100C6601E /* AnimationClosureProviderTransitionManager.swift in Sources */,
+				194A05DB1D18E9A600C6601E /* ViewController.swift in Sources */,
+				194A05D91D18E9A600C6601E /* AppDelegate.swift in Sources */,
+				194A06051D18EB5900C6601E /* UIImageEffects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		194A05E11D18E9A600C6601E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				194A05E21D18E9A600C6601E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		194A05E51D18E9A600C6601E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		194A05E61D18E9A600C6601E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		194A05E81D18E9A600C6601E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TransitionExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.herli.TransitionExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TransitionExample/TransitionExample-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		194A05E91D18E9A600C6601E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TransitionExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.herli.TransitionExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TransitionExample/TransitionExample-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		194A05D01D18E9A600C6601E /* Build configuration list for PBXProject "TransitionExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				194A05E51D18E9A600C6601E /* Debug */,
+				194A05E61D18E9A600C6601E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		194A05E71D18E9A600C6601E /* Build configuration list for PBXNativeTarget "TransitionExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				194A05E81D18E9A600C6601E /* Debug */,
+				194A05E91D18E9A600C6601E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 194A05CD1D18E9A600C6601E /* Project object */;
+}
