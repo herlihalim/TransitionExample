@@ -12,6 +12,7 @@ enum TransitionType: Int {
     case FadeSlide
     case ZoomFall
     case ZoomInOut
+    case Closure
     case _Count
 }
 
@@ -39,6 +40,7 @@ class ViewController: UITableViewController {
         case .FadeSlide: cell.textLabel?.text = "Fade Slide"
         case .ZoomFall:  cell.textLabel?.text = "Zoom Fall"
         case .ZoomInOut: cell.textLabel?.text = "Zoom In Out"
+        case .Closure:   cell.textLabel?.text = "Closure"
         default: break
         }
         
@@ -58,6 +60,46 @@ class ViewController: UITableViewController {
         case .FadeSlide: transitionManager = FadeSlideTransitionManager()
         case .ZoomFall:  transitionManager = ZoomFallTransitionManager()
         case .ZoomInOut: transitionManager = ZoomInOutTransitionManager()
+        case .Closure:
+            let manager = AnimationClosureProviderTransitionManager()
+            manager.animationDurationProvider =  { (transtionContext) in
+                return 0.5
+            }
+            let provider = { (transitionContext: UIViewControllerContextTransitioning, duration: NSTimeInterval) in
+                
+                let container = transitionContext.containerView()
+                
+                let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!
+                let toView = transitionContext.viewForKey(UITransitionContextToViewKey) ?? toViewController.view!
+                
+                toView.frame = transitionContext.finalFrameForViewController(toViewController)
+                toView.alpha = 0.0
+                
+                container?.addSubview(toView)
+                
+                UIView.animateWithDuration(duration, animations: { 
+                    toView.alpha = 1.0
+                    }, completion: { (fniished) in
+                    transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
+                })
+            }
+            manager.presentationAnimationWithContext = provider
+            manager.dismissalAnimationWithContext = { (transitionContext: UIViewControllerContextTransitioning, duration: NSTimeInterval) in
+                let fromView = transitionContext.viewForKey(UITransitionContextFromViewKey)
+                
+                let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!
+                let toView = transitionContext.viewForKey(UITransitionContextToViewKey) ?? toViewController.view!
+
+                toView.alpha = 1.0
+                
+                UIView.animateWithDuration(duration, animations: {
+                    fromView?.alpha = 0.0
+                    }, completion: { (finished) in
+                        transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
+                })
+            }
+            transitionManager = manager
+            
         default: break
         }
         transitionManager.animationDuration = 0.4
